@@ -1,0 +1,68 @@
+body{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.icono-principal{
+  width: 120px;
+}
+.principal{
+  width: 100%;
+  background-color: #E5E5E5;
+  font-family: 'Inter', sans-serif;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.zona-encriptado{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+
+
+.input-encriptar{
+  font-size: 32px;
+  overflow-y: auto;
+  background-color: #E5E5E5;
+  border: none;
+  position: relative;
+  top: 20%;
+}
+.texto-advertencia{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #495057;
+
+}
+
+.cuadro-respuesta{
+  width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 24 32 -8 rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around ;
+} 
+
+
+
+
+.material-symbols-outlined {
+  color: #495057;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
