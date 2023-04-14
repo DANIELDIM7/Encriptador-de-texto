@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./index.js"></script>
     <title>Encriptador de texto</title>
   </head>
   <body>
@@ -23,6 +24,7 @@
         <div class="zona-encriptado-texto">
           <img src="./img/Logo.png" alt="icono" class="icono-principal" />
           <textarea
+            id="texto-a-traducir"
             type="text"
             placeholder="Ingrese el texto aquí"
             class="input-encriptar"
@@ -35,17 +37,36 @@
             minúsculas y sin acento
           </p>
           <div class="caja-botones">
-            <button class="button encriptar">Encriptar</button>
-            <button class="button desencriptar">Desencriptar</button>
+            <button class="button encriptar" onclick="{mostrarEncriptado()}">
+              Encriptar
+            </button>
+            <button
+              class="button desencriptar"
+              onclick="{mostrarDesencriptado()}"
+            >
+              Desencriptar
+            </button>
           </div>
         </section>
       </div>
       <div class="zona-respuesta">
-        <img src="./img/Muñeco.png" alt="muñeco" />
-        <div class="cuadro-respuesta-texto">
+        <textarea
+          name=""
+          id="respuesta"
+          cols="30"
+          rows="10"
+          value="hola"
+        ></textarea>
+        <div id="respuesta-inicial">
+          <img src="./img/Muñeco.png" alt="muñeco" />
+          <div class="cuadro-respuesta-texto" id=""></div>
+
           <h2>Ningún mensaje fué encontrado</h2>
           <p>Ingresa el texto que desees encriptar o desencripta</p>
         </div>
+        <button class="button copiar" onclick="{copy()}" id="copiar">
+          Copiar
+        </button>
       </div>
     </div>
   </body>
